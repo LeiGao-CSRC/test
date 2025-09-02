@@ -37,7 +37,7 @@ test_dataset = MNISTDataset('./mnist_test.csv')
 test_loader = DataLoader(test_dataset, batch_size=batch_size, shuffle=True)
 
 
-# learning rate
+# learning rate, the original is 0.1
 learning_rate = 0.05
 num_epochs = 10
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
